@@ -1,0 +1,33 @@
+{
+    "name": "mycontroller/alipay-easysdk-laravel",
+    "description": "基于 alipay/alipay-easysdk 的 Laravel/Lumen 框架扩展",
+    "keywords": ["Laravel", "Lumen", "Alipay", "Alipay SDK"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MyController",
+            "email": "mycontroller@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "alipaysdk/easysdk": "2.2.*",
+        "illuminate/support": "5.*",
+        "illuminate/events": "5.*",
+        "illuminate/config": "5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyController\\AlipayEasySDK\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyController\\AlipayEasySDK\\Test\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
